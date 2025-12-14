@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <title>Mayoblox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font mirip Century Gothic -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-  margin: 0;
-  font-family: 'Century Gothic', Arial, sans-serif;
-  color: white;
-  text-align: center;
-  background: #e6909e;
-}
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: white;
+      text-align: center;
+      /* Tema pink, bisa diganti background image */
+      background: #e6909e;
+      /* Contoh kalau mau pakai gambar:
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      */
+    }
+
     .container {
       min-height: 100vh;
       display: flex;
@@ -20,34 +30,60 @@
       align-items: center;
       padding: 20px;
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+      font-weight: bold;
     }
+
     p {
       font-size: 1.2rem;
       max-width: 500px;
+      margin-bottom: 20px;
     }
+
     .btn {
-      margin-top: 25px;
+      display: block;
+      margin: 10px auto;
       padding: 12px 25px;
       background: white;
-      color: #6366f1;
+      color: #e6909e;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
+      width: 220px;
+      transition: 0.3s;
     }
+
+    .btn:hover {
+      background: #f3c6c9;
+      color: #fff;
+    }
+
+    /* Tambahan responsif untuk mobile */
+    @media(max-width: 500px){
+      h1 {
+        font-size: 2.2rem;
+      }
+      .btn {
+        width: 180px;
+      }
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Mayoblox</h1>
-<p>Selamat datang di link resmi Mayoblox!</p>
+    <p>Selamat datang di link resmi Mayoblox! Klik tombol di bawah untuk mengunjungi sosial media kami.</p>
 
-<a href="https://wa.me/628123456789" class="btn">WhatsApp</a>
-<a href="https://instagram.com/username" class="btn">Instagram</a>
-<a href="https://youtube.com/channel/..." class="btn">YouTube</a>
-
+    <!-- Tombol Linktree style -->
+    <a href="https://wa.me/628123456789" class="btn">WhatsApp</a>
+    <a href="https://instagram.com/username" class="btn">Instagram</a>
+    <a href="https://youtube.com/channel/..." class="btn">YouTube</a>
+    <a href="https://tiktok.com/@username" class="btn">TikTok</a>
+    <a href="https://linklain.com" class="btn">Website Lain</a>
   </div>
 </body>
 </html>
